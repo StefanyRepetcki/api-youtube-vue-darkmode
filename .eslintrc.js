@@ -7,6 +7,7 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'import/prefer-default-export': 'off',
+    'vue/no-unused-vars': "off",
     'no-param-reassign': [
       'error',
       {
@@ -18,6 +19,6 @@ module.exports = {
     'linebreak-style': 0
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
   },
 }
