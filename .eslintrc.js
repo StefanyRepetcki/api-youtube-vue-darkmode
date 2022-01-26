@@ -5,8 +5,7 @@ module.exports = {
   },
   extends: 'vuetify',
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-console': 'off',
     'import/prefer-default-export': 'off',
     'no-param-reassign': [
       'error',
