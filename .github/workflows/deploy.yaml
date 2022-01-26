@@ -23,8 +23,8 @@ jobs:
           git config --global user.name $username
       - name: deploy to gh-pages
         run: |
-          npm i
-          NODE_ENV=production npm run build
+          yarn install
+          NODE_ENV=production yarn run build
           cd dist
           git init
           git add -A
