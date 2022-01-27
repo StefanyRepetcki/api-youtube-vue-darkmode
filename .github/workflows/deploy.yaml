@@ -1,8 +1,5 @@
 name: deploy
-on:
-  push:
-    branches:
-      - master
+on: push
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -26,8 +23,4 @@ jobs:
         run: |
           yarn install
           NODE_ENV=production yarn run build
-          cd dist
-          git init
-          git add -A
-          git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
-          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" master:gh-pages
+      
