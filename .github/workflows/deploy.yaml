@@ -14,7 +14,7 @@ jobs:
       - name: setup git auth
         env:
           email: 'stefany.c.r@hotmail.com'
-          username: 'Stefany Repetcki'
+          username: 'StefanyRepetcki'
           access_token: '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'
         run: |
           git config --global credential.helper store
