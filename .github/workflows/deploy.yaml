@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - master
-      - gh-pages
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -12,6 +11,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12'
+          target_branch: gh-pages
       - name: setup git auth
         env:
           email: 'stefany.c.r@hotmail.com'
@@ -30,4 +30,4 @@ jobs:
           git init
           git add -A
           git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
-          git push master:gh-pages -f
+          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" master:gh-pages
