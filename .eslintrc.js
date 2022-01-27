@@ -5,20 +5,10 @@ module.exports = {
   },
   extends: 'vuetify',
   rules: {
-    'no-console': 'off',
-    'import/prefer-default-export': 'off',
-    'vue/no-unused-vars': "off",
-    'no-param-reassign': [
-      'error',
-      {
-        props: true,
-        ignorePropertyModificationsFor: ['state', 'vm'],
-      },
-    ],
-    'no-shadow': ['error', { allow: ['state'] }],
-    'linebreak-style': 0
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   },
   parserOptions: {
-    parser: '@babel/eslint-parser',
+    parser: 'babel-eslint',
   },
 }
