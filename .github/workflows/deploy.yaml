@@ -19,8 +19,8 @@ jobs:
         run: |
           git config --global credential.helper store
           echo "https://${access_token}:x-oauth-basic@github.com" > ~/.git-credentials
-          git config --global user.email $email
-          git config --global user.name $username
+          git config --global user.email stefany.c.r@hotmail.com
+          git config --global user.name StefanyRepetcki
       - name: deploy to gh-pages
         run: |
           yarn install
