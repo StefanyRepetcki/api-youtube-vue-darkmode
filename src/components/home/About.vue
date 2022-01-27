@@ -58,12 +58,8 @@
     },
     methods: {
       async init (params) {
-        try {
-          const videos = await buscarYoutube(params)
-          this.videos = videos.data.items
-        } catch (error) {
-          console.log(error)
-        }
+        const videos = await buscarYoutube(params)
+        this.videos = videos.data.items
       },
     },
   }
