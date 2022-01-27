@@ -2,6 +2,7 @@
   "name": "vue-api-youtube",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://stefanyrepetcki.github.io/api-youtube-vue-darkmode/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
