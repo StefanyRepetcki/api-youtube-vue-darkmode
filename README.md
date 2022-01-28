@@ -1,4 +1,4 @@
-# CONEXÃO COM API DO YOUTUBE EM VUE UTILIZANDO A BIBLIOTECA VUETIFY PARA O DESIGN SYSTEM
+# Fiz uma conexão com a API do YOUTUBE, utilizei VUETIFY para o design system, VueX para as rotas, e o ESLint que é uma ferramenta de análise de código estática para identificar padrões problemáticos encontrados no código JavaScript. Como o vuetify é repleto de componentes ja prontos, aproveitei e fiz a versão darkmode da aplicação.
 
 ## Project setup
 ```
